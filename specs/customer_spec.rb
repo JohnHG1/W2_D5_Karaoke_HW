@@ -1,19 +1,29 @@
 require("minitest/autorun")
 require("minitest/reporters")
 MiniTest::Reporters.use! MiniTest::Reporters::SpecReporter.new
-require_relative("../customer")
-require_relative("../room")
-require_relative("../song")
+require_relative("../customer.rb")
+require_relative("../room.rb")
+require_relative("../song.rb")
 
 
 class TestCustomer < MiniTest::Test
 
-  def setup
-    @Customer1 = Customer.new("JHG", 50, "My Way")
-    # @Customer2 = Customer.new("Zsolt", 70, "Edelweiss")
-    # @Customer3 = Customer.new("Louise", 20, "I want your sex")
-    @room_name1 = Room.new("big_room", 25, 8)
-    @room_name2 = Room.new("small_room", 15, 2)
-    @cost1 = Cost.new("1xsong", 2.5)
-    # @cost2 = Cost.new("5xsong", 10)
+  def setup()
+   @customer1 = Customer.new("John", 50)
+   @customer2 = Customer.new("Sam", 150)
   end
+
+
+  def test_customer_has_name()
+    assert_equal("John", @customer1.name)
+  end
+
+  def test_customer_has_cash()
+      assert_equal(50, @customer1.cash)
+  end
+
+  def test_customer_song_start_empty()
+    assert_equal(0, @customer1.song_count())
+  end
+
+end

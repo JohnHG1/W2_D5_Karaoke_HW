@@ -1,10 +1,10 @@
 class Song
-attr_reader :name, :genre, :solo
+attr_reader :name, :price
 
-def initialize(name, genre, solo)
-  @name = name
-  @genre = genre
-  @solo = solo
-end
+  def initialize(name, price)
+    @song = []
+    @price = price
+
+  end
 
 end

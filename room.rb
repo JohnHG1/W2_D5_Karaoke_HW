@@ -1,8 +1,25 @@
 class Room
-  attr_reader :room, :songs
-  def initialize(name, cost, capacity)
+  attr_reader :room, :song
+  def initialize(name, price, capacity)
     @name = name
-    @cost = cost
+    @price = price
     @capacity = capacity
-    @songs = []
+    @song = []
   end
+
+
+  def get_room_name(name)
+    return @room1
+  end
+  #
+  #
+  # def add_song(song_to_add)
+  #     @song.push(song_to_add)
+  #   end
+  #
+  #
+  # def add_song(song)
+  #   @song.push(song)
+  # end
+
+end

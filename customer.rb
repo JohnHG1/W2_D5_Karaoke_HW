@@ -1,8 +1,15 @@
 class Customer
-  attr_reader :cash, :song
+  attr_reader :name, :cash
 
-  def initialize(room_name, cash, song)
-    @room_name = name
+  def initialize(name, cash)
+    @name = name
     @cash = cash
-    @fav_song = fav_song
+    @song = []
+
   end
+
+  def song_count()
+    return @song.size()
+  end
+
+end
