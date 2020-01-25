@@ -19,7 +19,7 @@ class TestCustomer < MiniTest::Test
   end
 
   def test_customer_has_cash()
-      assert_equal(50, @customer1.cash)
+      assert_equal(150, @customer2.cash)
   end
 
   def test_customer_song_start_empty()

@@ -5,7 +5,6 @@ class Customer
     @name = name
     @cash = cash
     @song = []
-
   end
 
   def song_count()
