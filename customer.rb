@@ -4,11 +4,11 @@ class Customer
   def initialize(name, cash)
     @name = name
     @cash = cash
-    @song = []
   end
 
-  def song_count()
-    return @song.size()
-  end
+  # def song_count()
+  #   return @song.size()
+  # end
+
 
 end

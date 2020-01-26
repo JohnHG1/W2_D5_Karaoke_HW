@@ -1,16 +1,13 @@
 class Song
-attr_reader :song_name, :price
+attr_reader :name, :price, :level
 
-  def initialize(song_name, price)
-    @song_name = song_name
+  def initialize(name, price, level)
+    @name = name
     @price = price
     @level = level
   end
 
 
-  # def get_song_name(song)
-  #   return name[:song_name]
-  # end
-
+  
 
 end
