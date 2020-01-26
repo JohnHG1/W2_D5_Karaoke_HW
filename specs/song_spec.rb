@@ -5,16 +5,16 @@ MiniTest::Reporters.use! MiniTest::Reporters::SpecReporter.new
 class TestSong < MiniTest::Test
 
     def setup
-      @song1= Song.new("My_Way", 2)
+      @song = Song.new("My_Way", 2, "easy")
     end
 
 
-  def test_song_has_name()
-    assert_equal("My_Way", @song1.name())
+  def test_song_name()
+    assert_equal("My_Way", @song.song_name())
   end
 
   # def test_song_price()
-  #     assert_equal(2, @Song1.price)
+  #     assert_equal(2, @song.price)
   # end
   # #
   # def test_song_has_level

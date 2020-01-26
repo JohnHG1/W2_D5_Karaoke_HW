@@ -12,7 +12,6 @@ class TestRoom < MiniTest::Test
     @customer1 = Customer.new("JHG", 50)
     @room = Room.new("bigroom", 25, 8)
     @room2 = Room.new("smallroom", 15, 3)
-    @song1 = Song.new("My Way", 2)
 
   end
 
@@ -29,18 +28,13 @@ class TestRoom < MiniTest::Test
       assert_equal(3, @room2.capacity())
     end
 
-    # def test_can_get_song_price
-    #   assert_equal(2, @song_name1.cost)
-    # end
   #
-  # def test_can_add_song_to_customer()
-  #   customer = @Customer1
-  #   assert_equal(1, @customer.song_count())
+  # def test_can_add_song_to_room()
+  #   room = @room2
+  #   assert_equal(1, @song.push())
   # end
   #
-  # def test_can_sell_pet_to_customer()
-  #   customer = Customer.new("Jack Jarvis", 1000)
-  #   @pet_shop.sell_pet_to_customer("Sir Percy", customer)
+  #
   # end
 
 end
